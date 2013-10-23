@@ -87,6 +87,7 @@
     <Compile Include="Data\NHibernateHelper.cs" />
     <Compile Include="Data\NHibernateRepository.cs" />
     <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Domain\PersonalInformation.cs" />
     <Compile Include="Fake\FakeHttpContext.cs" />
     <Compile Include="Fake\FakeHttpRequest.cs" />
     <Compile Include="Fake\FakeHttpResponse.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Services\IRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Helpers\" />
     <Folder Include="Logic\" />
   </ItemGroup>
   <ItemGroup>
