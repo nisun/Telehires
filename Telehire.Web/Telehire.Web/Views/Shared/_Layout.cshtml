@@ -13,7 +13,7 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="@Url.Action("Index", "Home")">Bootstrap</a>
+                <a class="brand" href="@Url.Action("Index", "Home")">Telehire</a>
                 <ul class="nav">
                     @Html.MenuLink("Home", "Index", "Home")
                 </ul>
@@ -61,6 +61,8 @@
         </div>
     </div>
     @Scripts.Render("~/js")
+         
     @RenderSection("scripts", required: false)
+    @Html.Partial("_JavascriptMessage")
 </body>
 </html>

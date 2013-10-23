@@ -12,9 +12,5 @@ namespace Telehire.Web.Controllers
             return View();
         }
 
-        public ActionResult Examples()
-        {
-            return View();
-        }
     }
 }

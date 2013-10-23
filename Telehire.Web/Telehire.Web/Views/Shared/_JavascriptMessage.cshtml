@@ -1,0 +1,11 @@
+﻿@{
+    string _Key = "Telehire.JavaScript";
+    var msg = TempData[_Key] as string;
+    if (!string.IsNullOrEmpty(msg))
+    {
+    <div id='my-javascript'>
+        @Html.Raw(msg)
+    </div>
+    }
+    
+}
