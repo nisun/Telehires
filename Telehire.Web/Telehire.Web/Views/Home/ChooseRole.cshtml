@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "";
+}
+
+<h2>Create an Account</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.RadioButton("role", "contractor")<span>Contractor<br /></span>  </td>
+            @*<td>@Html.Label("Contractor \n I want to hire");</td>*@
+        </tr>
+        <tr>
+            @*<div class="clear"></div>*@
+            <td>@Html.RadioButton("role", "freelancer") <span>Freelancer</span></td>
+        </tr>        
+    </table>
+    <div class="clear"></div>
+       <div>
+            <button type="submit" name="next" value="next" class="btn btn-primary"> <i class="icon-edit icon-white"></i>Go!</button>
+            
+        </div>
+}

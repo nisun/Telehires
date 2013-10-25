@@ -1,0 +1,47 @@
+﻿@model Telehire.Web.Models.UserModel
+
+    <table class="table table-condensed">
+        <tr>
+            <td>@Html.LabelFor(x => x.Surname)
+            </td>
+            <td>@Html.TextBoxFor(x => x.Surname, new { autocomplete = "on" })
+               <span class="error"> @Html.ValidationMessageFor(x => x.Surname)</span>
+            </td>
+            </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.FirstName)</td>
+            <td>@Html.TextBoxFor(x => x.FirstName, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.FirstName)
+            </td>
+            </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.OtherName)</td>
+            <td>@Html.TextBoxFor(x => x.OtherName, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.OtherName)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Email)</td>
+            <td>@Html.TextBoxFor(x => x.Email, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.Email)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.NewPassword)</td>
+            <td>@Html.TextBoxFor(x => x.NewPassword, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.NewPassword)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.ConfirmPassword)</td>
+            <td>@Html.TextBoxFor(x => x.ConfirmPassword, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.ConfirmPassword)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.PhoneNumber)</td>
+            <td>@Html.TextBoxFor(x => x.PhoneNumber, new { autocomplete = "on" })
+                @Html.ValidationMessageFor(x => x.PhoneNumber)
+            </td>
+        </tr>
+        </table>

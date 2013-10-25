@@ -1,8 +1,9 @@
 ﻿using System.Web.Mvc;
+using Telehire.Web.Models;
 
 namespace Telehire.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         //
         // GET: /Home/
@@ -12,5 +13,22 @@ namespace Telehire.Web.Controllers
             return View();
         }
 
+        public ActionResult SignUp()
+        {
+            var model = new UserModel();
+
+            return View(model);
+        }
+
+        public ActionResult ChooseRole()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public ActionResult ChooseRole()
+        //{
+        //    if(
+        //}
     }
 }
